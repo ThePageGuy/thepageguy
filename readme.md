@@ -15,6 +15,7 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
+  <a href="https://thepageguy.github.io/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/rss.svg" alt="https://thepageguy.github.io/" height="30" width="40" /></a>
 <a href="https://codepen.io/thepageguy" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="thepageguy" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/wilfredo-gomez-99393728a" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="wilfredo-gomez-99393728a" height="30" width="40" /></a>
 <a href="https://hashnode.com/@thepageguy" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg" alt="@thepageguy" height="30" width="40" /></a>
