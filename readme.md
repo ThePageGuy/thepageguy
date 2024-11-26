@@ -1,11 +1,7 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-![Design and Development](Banner.png)
-
-<h1 align="center">Hi 👋, I'm Wilfredo Gomez</h1>
+<h1 align="center">Hi 👋, I'm The Page Guy</h1>
 <h3 align="center">A Passionate Front-End Web Developer</h3>
-
-- 🌱 I’m currently learning **TailWind CSS**
 
 - 👯 I’m looking to collaborate on **Open Sources**
 
@@ -30,9 +26,5 @@
 ### Random Dev Quote
 
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
-
-### Examples of Work
-
-<img src="example.gif" width="100%">
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
