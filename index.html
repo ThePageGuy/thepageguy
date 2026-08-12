@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="The Page Guy">
+    <meta name="description" content="Portfolio of Wilfredo Gomez Martinez, a full-stack web developer specializing in modern web technologies and web application development.">
+    <title>Wilfredo Gomez Martinez | Full-Stack Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="text-gray-200">
+    <!-- Mobile Menu Overlay -->
+    <div id="menuOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+
+    <div class="max-w-3xl mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="flex items-center justify-between mb-16 relative z-50">
+            <h1 class="text-2xl font-medium">The Page Guy</h1>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#experience" class="hover:text-sky-400 transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="menuBtn" class="md:hidden text-gray-200 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 h-full w-64 bg-[#0c0c0c] card z-50 p-6">
+                <button id="closeBtn" class="absolute top-6 right-6 text-gray-200">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+                <nav class="flex flex-col space-y-6 mt-16">
+                    <a href="#experience" class="hover:text-sky-400 transition-colors">Experience</a>
+                    <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
+                    <a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+              <!-- Hero Section -->
+              <section class="mb-20">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="space-y-4 text-center md:text-left mb-8 md:mb-0">
+                        <h2 class="text-4xl md:text-5xl font-bold gradient-text">Hi there! 👋<br>I'm Wilfredo Gomez Martinez</h2>
+                        <p class="text-gray-400 max-w-lg">
+                            Full-stack web developer based in Honduras, with U.S. education and professional experience across the United States and Peru.
+                        </p>
+                        <div class="flex flex-wrap gap-4 pt-4 justify-center md:justify-start">
+                            <a href="https://www.linkedin.com/in/thepageguy/" target="_blank" class="flex items-center space-x-2 text-sky-400 hover:text-sky-300">LinkedIn</a>
+                            <a href="https://github.com/ThePageGuy" target="_blank" class="text-sky-400 hover:text-sky-300">GitHub</a>
+                            <a href="https://www.frontendmentor.io/profile/ThePageGuy" target="_blank" class="text-sky-400 hover:text-sky-300">Frontend Mentor</a>
+                            <a href="https://cssbattle.dev/player/thepageguynew" target="_blank" class="text-sky-400 hover:text-sky-300">CSSBattle</a>
+                        </div>
+                    </div>
+                    <div class="sphere-container">
+                        <canvas id="globe"></canvas>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Experience Section -->
+            <section id="experience" class="mb-20">
+                <h3 class="text-2xl font-medium mb-8">Experience</h3>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+
+                    <!-- Productos Union -->
+                    <div class="card p-6 rounded-lg">
+                        <h4 class="text-sky-400 mb-2">Productos Union</h4>
+
+                        <p class="text-sm text-gray-400 mb-4">
+                            Developed and maintained full-stack web applications that helped
+                            transition manual, physical record-keeping processes into digital
+                            workflows. Worked across the frontend, backend, and database layers
+                            to build and maintain reliable web solutions.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-sky-400/10 text-sky-400 px-2 py-1 rounded">
+                                TypeScript
+                            </span>
+                            <span class="text-xs bg-sky-400/10 text-sky-400 px-2 py-1 rounded">
+                                Node.js
+                            </span>
+                            <span class="text-xs bg-sky-400/10 text-sky-400 px-2 py-1 rounded">
+                                Firebase
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Walla Walla University IT Department -->
+                    <div class="card p-6 rounded-lg">
+                        <h4 class="text-sky-400 mb-2">
+                            Walla Walla University IT Department
+                        </h4>
+
+                        <p class="text-sm text-gray-400 mb-4">
+                            Developed a web-based dashboard for monitoring student working
+                            hours, helping the IT department manage and track employment
+                            information through a centralized digital interface.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-sky-400/10 text-sky-400 px-2 py-1 rounded">
+                                JavaScript
+                            </span>
+                            <span class="text-xs bg-sky-400/10 text-sky-400 px-2 py-1 rounded">
+                                Chart.js
+                            </span>
+                            <span class="text-xs bg-sky-400/10 text-sky-400 px-2 py-1 rounded">
+                                Sass
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Center for Humanitarian Engagement -->
+                    <div class="card p-6 rounded-lg">
+                        <h4 class="text-sky-400 mb-2">
+                            Center for Humanitarian Engagement
+                        </h4>
+
+                        <p class="text-sm text-gray-400 mb-4">
+                            Provided freelance front-end development support by updating and
+                            improving a landing page to better align with World Wide Web
+                            Consortium (W3C) web standards and accessibility practices.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-sky-400/10 text-sky-400 px-2 py-1 rounded">
+                                HTML
+                            </span>
+                            <span class="text-xs bg-sky-400/10 text-sky-400 px-2 py-1 rounded">
+                                CSS
+                            </span>
+                            <span class="text-xs bg-sky-400/10 text-sky-400 px-2 py-1 rounded">
+                                JavaScript
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+    
+            <!-- Technologies Section -->
+            <section class="mb-20">
+                <h3 class="text-2xl font-medium mb-8">Technologies</h3>
+
+                <div class="space-y-8">
+
+                    <!-- Languages -->
+                    <div>
+                        <h4 class="text-lg font-medium text-gray-300 mb-4">Languages</h4>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                            <div class="card p-4 rounded-lg text-center">
+                                <img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript" class="mx-auto mb-2" />
+                                <p class="text-sm text-gray-400">JavaScript</p>
+                            </div>
+
+                            <div class="card p-4 rounded-lg text-center">
+                                <img src="https://skillicons.dev/icons?i=typescript" alt="TypeScript" class="mx-auto mb-2" />
+                                <p class="text-sm text-gray-400">TypeScript</p>
+                            </div>
+
+                            <div class="card p-4 rounded-lg text-center">
+                                <img src="https://skillicons.dev/icons?i=python" alt="Python" class="mx-auto mb-2" />
+                                <p class="text-sm text-gray-400">Python</p>
+                            </div>
+
+                            <div class="card p-4 rounded-lg text-center">
+                                <img src="https://skillicons.dev/icons?i=html" alt="HTML" class="mx-auto mb-2" />
+                                <p class="text-sm text-gray-400">HTML</p>
+                            </div>
+
+                            <div class="card p-4 rounded-lg text-center">
+                                <img src="https://skillicons.dev/icons?i=css" alt="CSS" class="mx-auto mb-2" />
+                                <p class="text-sm text-gray-400">CSS</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div>
+                        <h4 class="text-lg font-medium text-gray-300 mb-4">Frontend</h4>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                            <div class="card p-4 rounded-lg text-center">
+                                <img src="https://skillicons.dev/icons?i=react" alt="React" class="mx-auto mb-2" />
+                                <p class="text-sm text-gray-400">React</p>
+                            </div>
+
+                            <div class="card p-4 rounded-lg text-center">
+                                <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS" class="mx-auto mb-2" />
+                                <p class="text-sm text-gray-400">Tailwind CSS</p>
+                            </div>
+
+                            <div class="card p-4 rounded-lg text-center">
+                                <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap" class="mx-auto mb-2" />
+                                <p class="text-sm text-gray-400">Bootstrap</p>
+                            </div>
+
+                            <div class="card p-4 rounded-lg text-center">
+                                <img src="https://skillicons.dev/icons?i=sass" alt="Sass" class="mx-auto mb-2" />
+                                <p class="text-sm text-gray-400">Sass</p>
+                            </div>
+
+                            <div class="card p-4 rounded-lg text-center">
+                                <img src="https://skillicons.dev/icons?i=jquery" alt="jQuery" class="mx-auto mb-2" />
+                                <p class="text-sm text-gray-400">jQuery</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend & Database -->
+                    <div>
+                        <h4 class="text-lg font-medium text-gray-300 mb-4">Backend &amp; Database</h4>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                            <div class="card p-4 rounded-lg text-center">
+                                <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" class="mx-auto mb-2" />
+                                <p class="text-sm text-gray-400">Node.js</p>
+                            </div>
+
+                            <div class="card p-4 rounded-lg text-center">
+                                <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" class="mx-auto mb-2" />
+                                <p class="text-sm text-gray-400">MongoDB</p>
+                            </div>
+
+                            <div class="card p-4 rounded-lg text-center">
+                                <img src="https://skillicons.dev/icons?i=firebase" alt="Firebase" class="mx-auto mb-2" />
+                                <p class="text-sm text-gray-400">Firebase</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testing & Tools -->
+                    <div>
+                        <h4 class="text-lg font-medium text-gray-300 mb-4">Testing &amp; Tools</h4>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                            <div class="card p-4 rounded-lg text-center">
+                                <img src="https://skillicons.dev/icons?i=jest" alt="Jest" class="mx-auto mb-2" />
+                                <p class="text-sm text-gray-400">Jest</p>
+                            </div>
+
+                            <div class="card p-4 rounded-lg text-center">
+                                <img src="https://skillicons.dev/icons?i=git" alt="Git" class="mx-auto mb-2" />
+                                <p class="text-sm text-gray-400">Git</p>
+                            </div>
+
+                            <div class="card p-4 rounded-lg text-center">
+                                <img src="https://skillicons.dev/icons?i=gcp" alt="Google Cloud" class="mx-auto mb-2" />
+                                <p class="text-sm text-gray-400">Google Cloud</p>
+                            </div>
+
+                            <div class="card p-4 rounded-lg text-center">
+                                <img src="https://skillicons.dev/icons?i=figma" alt="Figma" class="mx-auto mb-2" />
+                                <p class="text-sm text-gray-400">Figma</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+    
+            <!-- Featured Project -->
+            <section class="mb-20" id="projects">
+                <h3 class="text-2xl font-medium mb-8">Top Project</h3>
+
+                <div class="card p-6 rounded-lg">
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-4">
+                        <div>
+                            <h4 class="text-xl font-medium mb-2">PrairieLearn</h4>
+
+                            <p class="text-gray-400 text-sm mb-4">
+                                Contributed to PrairieLearn, an open-source online learning
+                                platform for creating problem-driven assessments, homeworks,
+                                and exams. Worked within an established codebase to develop
+                                and improve features as part of a collaborative development
+                                environment.
+                            </p>
+
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs bg-sky-400/10 text-sky-400 px-2 py-1 rounded">
+                                    TypeScript
+                                </span>
+                                <span class="text-xs bg-sky-400/10 text-sky-400 px-2 py-1 rounded">
+                                    Docker
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex space-x-4">
+                        <a href="https://www.prairielearn.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-sm text-sky-400 hover:text-sky-300">
+                            Visit Website →
+                        </a>
+
+                        <a href="https://github.com/PrairieLearn/PrairieLearn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-sm text-sky-400 hover:text-sky-300">
+                            GitHub →
+                        </a>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- GitHub Projects -->
+            <section id="github" class="mb-20">
+                <div class="flex justify-between items-center mb-8">
+                    <h3 class="text-2xl font-medium">GitHub Projects</h3>
+                    <a href="https://github.com/ThePageGuy?tab=repositories" target="_blank" 
+                       class="text-sm text-sky-400 hover:text-sky-300">View All Projects →</a>
+                </div>
+                <div id="github-projects" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <!-- GitHub projects will be loaded here -->
+                </div>
+            </section>
+    
+            <!-- Contact Section -->
+            <section id="contact" class="mb-16">
+                <h3 class="text-2xl font-medium mb-8">Let's Connect</h3>
+                <div class="card p-8 rounded-lg text-center">
+                    <p class="text-gray-400 mb-4">Interested in working together, discussing web development, or learning more about my experience? Let's connect.</p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="mailto:thepageguy@mailfence.com" class="inline-block bg-sky-400 text-black px-6 py-2 rounded-lg hover:bg-sky-300 transition-colors">
+                            Send Email
+                        </a>
+                        <a href="https://wa.link/dcw2n2" target="_blank" class="inline-block bg-sky-400/10 text-sky-400 px-6 py-2 rounded-lg hover:bg-sky-400/20 transition-colors">
+                            WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <script src="assets/js/script.js"></script>
+        <script src="assets/js/github-fetch.js"></script>
+</body>
+</html>
